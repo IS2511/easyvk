@@ -15,9 +15,9 @@ const currentSessionFile = path.join(__dirname, '.vksession')
 /**
  *
  *  This test runs your own bot with keyboard support
- *  To run it you need to enable LongPoll in your group and then get access_token
- *  After this, put your access_token in {acess_token} parameter
- *  And then run it. Send a message to your bot, he will reply to it with a keyboard interface!
+ *  To run it you need to enable LongPoll in your group and then get an access_token
+ *  After this, put your access_token in the {acess_token} parameter
+ *  And then run it. Send a message to your bot and he will reply to it with a keyboard interface!
  *
  */
 
@@ -30,7 +30,7 @@ easyVK({
 	save_session: false,
 	session_file: currentSessionFile,
 
-	//Access token which you need get from your group settings
+	//Access token that you need to get from your group settings
 	access_token: '{GROUP_ACCESS_TOKEN}',
 	reauth: true
 }).then(vk => {
@@ -92,7 +92,7 @@ easyVK({
 			user_id: msgEvent.user_id,
 			message: ( (payload) ? "Button started" : 'Reply it'),
 			keyboard: keyboardObject
-		}), "post"); //Only POST requests recommend
+		}), "post"); //Only POST requests recommended
 	}
 
 
@@ -100,8 +100,8 @@ easyVK({
 
 	/*
 	 *
-	 * In the next release this listeners will be one listener
-	 * And one-debugger will too
+	 * In the next release these listeners will be put together to one listener
+	 * And a debugger will too
 	 *
 	 */
 
