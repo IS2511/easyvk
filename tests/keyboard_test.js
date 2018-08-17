@@ -38,7 +38,7 @@ easyVK({
 
 	const session = vk.session
 	
-	console.info(`Running a LongPoll server.... \nwith group named as ("${session.group_name}")`)
+	console.info(`Running a LongPoll server.... \nwith group named ("${session.group_name}")`)
 
 	//LongPoll for Bots
 	const LPB = vk.bots.longpoll
