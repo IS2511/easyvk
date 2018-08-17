@@ -100,8 +100,8 @@ easyVK({
 
 	/*
 	 *
-	 * In the next release these listeners will be put together to one listener
-	 * And a debugger will too
+	 * In the next release these listeners will be put together to a main listener
+	 * And a debugger listener
 	 *
 	 */
 
