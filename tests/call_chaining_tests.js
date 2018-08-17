@@ -24,7 +24,7 @@ easyVK({
 	save_session: false,
 	session_file: currentSessionFile,
 
-	//Access token which you need to get from your group settings
+	//Access token that you need to get from your group settings
 	access_token: '{TOKEN_HERE}',
 }).then((vk) => {
 
